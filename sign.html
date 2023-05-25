@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>Sign</title>
+</head>
+<body>
+    <div class="title">
+        <h1>e-Knowledge</h1>
+    </div>
+  
+  <div class="container">
+    <div class="flip-card">
+        <div class="menu">
+          <button disabled id="signIn" class="menu-btn sign-in active">Sign In</button>
+          <button  id="singUp" class="menu-btn sign-up">Sign Up</button>
+        </div>
+      <div id="cardInner" class="flip-card-inner ">
+  
+        <div class="flip-card-front">
+          
+          <h2>Sign In</h2>
+          <form id="signInForm" action="" method="">
+            <div class="input-gorup email-input">
+              <input required type="email" name="user_email" autocomplete="off"  placeholder="Your Email">
+              <i class="left-icon fas fa-at"></i>
+            </div>
+            
+            <div class="input-gorup password-input">
+              <input id="signInPass" required type="password" name="user_password" autocomplete="off" placeholder="Your Password">
+              <i class="left-icon fas fa-lock"></i>
+              <i id="signInShowPass" class="right-icon fas fa-eye show-pass"></i>
+            </div>
+            
+           
+            
+            <div class="input-gorup submit-input">
+              <input type="submit" name="submit_btn" value="Submit">
+            </div>
+          </form>
+          
+          <span>
+            <a class="forgot-link" href="">Forgot your password?</a>
+          </span>
+          
+          
+        </div>
+        
+        <div class="flip-card-back">
+          <h2>Sign Up</h2>
+          <form id="signUpForm" action="" method="">
+            <div class="input-gorup name-input">
+              <input required type="text" name="user_name" autocomplete="off" placeholder="Your Name">
+              <i class="left-icon fas fa-user"></i>
+            </div>
+            
+            <div class="input-gorup email-input">
+              <input type="email" name="user_email" autocomplete="off" placeholder="Your Email">
+              <i class="left-icon fas fa-at"></i>
+            </div>
+            
+            <div class="input-gorup password-input">
+              <input id="signUpPass" required type="password" name="user_password" autocomplete="off" placeholder="Your Password">
+              <i class="left-icon fas fa-lock"></i>
+              <i id="signUpShowPass" class="right-icon fas fa-eye show-pass"></i>
+            </div>
+            
+            <div class="input-gorup submit-input">
+              <input type="submit" name="submit_btn" value="Submit">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="sign.js"></script>
+</body>
+</html>
